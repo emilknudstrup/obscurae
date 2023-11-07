@@ -1,0 +1,7 @@
+numpy
+sphinx-book-theme
+nbsphinx
+sphinxcontrib-bibtex
+ipython
+scipy
+Panic
