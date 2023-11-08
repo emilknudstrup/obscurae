@@ -19,7 +19,7 @@ The same thing goes for stellar spots, also known as stellar impurities.
    rm
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Examples:
    
    examples/make_a_star
@@ -30,7 +30,8 @@ The same thing goes for stellar spots, also known as stellar impurities.
    :maxdepth: 1
    :caption: API
 
-   api
+   API/shadow
+   API/dynamics
 
 .. toctree::
    :maxdepth: 1

@@ -36,7 +36,7 @@ extensions = [
 'sphinx.ext.todo', 
 'sphinx.ext.napoleon',
 'nbsphinx',
-#'sphinxcontrib.bibtex'
+'sphinxcontrib.bibtex'
 ]
 
 # mock imports (alternatively add packages to docs/requirements.txt)
@@ -96,6 +96,8 @@ class MyReferenceStyle(AuthorYearReferenceStyle):
 sphinxcontrib.bibtex.plugin.register_plugin(
     'sphinxcontrib.bibtex.style.referencing',
     'author_year_round', MyReferenceStyle)
+
+bibtex_reference_style = 'author_year_round'
 
 # Reference figure
 numfig = True
