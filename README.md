@@ -1,6 +1,9 @@
 # obscurae
 Create stellar line profiles obscured by a transiting planet or/and a spot crossing the disk
 
+### Documentation
+[![Documentation Status](https://readthedocs.org/projects/obscurae/badge/?version=latest)](https://obscurae.readthedocs.io/en/latest/?badge=latest)
+
 ### Installation
 `cd /path/to`
 

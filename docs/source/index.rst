@@ -20,11 +20,17 @@ The same thing goes for stellar spots, also known as stellar impurities.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Examples:
+   :caption: Examples
    
    examples/make_a_star
    examples/meddling_planet
    examples/stellar_impurities
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Installation
+
+   install
 
 .. toctree::
    :maxdepth: 1
