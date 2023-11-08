@@ -35,7 +35,8 @@ extensions = [
 'sphinx.ext.coverage', 
 'sphinx.ext.todo', 
 'sphinx.ext.napoleon',
-'nbsphinx'
+'nbsphinx',
+#'sphinxcontrib.bibtex'
 ]
 
 # mock imports (alternatively add packages to docs/requirements.txt)
@@ -63,3 +64,39 @@ html_theme = 'sphinx_book_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+# -- Bibliography ----------------------------------------------------------------
+
+bibtex_bibfiles = ['refs.bib']
+from dataclasses import dataclass, field
+import sphinxcontrib.bibtex.plugin
+
+from sphinxcontrib.bibtex.style.referencing import BracketStyle
+from sphinxcontrib.bibtex.style.referencing.author_year \
+    import AuthorYearReferenceStyle
+
+
+def bracket_style() -> BracketStyle:
+    return BracketStyle(
+        left='(',
+        right=')',
+    )
+
+
+@dataclass
+class MyReferenceStyle(AuthorYearReferenceStyle):
+    bracket_parenthetical: BracketStyle = field(default_factory=bracket_style)
+    bracket_textual: BracketStyle = field(default_factory=bracket_style)
+    bracket_author: BracketStyle = field(default_factory=bracket_style)
+    bracket_label: BracketStyle = field(default_factory=bracket_style)
+    bracket_year: BracketStyle = field(default_factory=bracket_style)
+
+
+sphinxcontrib.bibtex.plugin.register_plugin(
+    'sphinxcontrib.bibtex.style.referencing',
+    'author_year_round', MyReferenceStyle)
+
+# Reference figure
+numfig = True
+  

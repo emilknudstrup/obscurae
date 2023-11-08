@@ -343,7 +343,7 @@ class Star(Disk):
 	def convolve(self):
 		'''Convolve the stellar grid.
 		
-		Convolces the stellar grid with the macroturbulence and microturbulence following the approaches in :cite:t:`Hirano2011` and :cite:t:`Gray2005`.
+		Convolves the stellar grid with the macroturbulence and microturbulence following the approaches in :cite:t:`Hirano2011` and :cite:t:`Gray2005`.
 		
 		'''
 
