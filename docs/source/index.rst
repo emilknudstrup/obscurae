@@ -12,6 +12,9 @@ to help me get rid of those pesky planets.
 
 The same thing goes for stellar spots, also known as stellar impurities.
 
+The planetary shadow is modelled following the approaches in :cite:t:`Albrecht2007,Albrecht2013`, but specifically implemented as described in :cite:t:`Knudstrup2022`.
+
+
 .. toctree::
    :maxdepth: 1
    :caption: The RM effect
