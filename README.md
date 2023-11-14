@@ -6,11 +6,8 @@ Create stellar line profiles obscured by a transiting planet or/and a spot cross
 
 ### Installation
 `cd /path/to`
-
 `git clone https://github.com/emilknudstrup/obscurae.git`
-
-`cd /path/to/fetch_n_prep`
-
+`cd /path/to/obscurae`
 `python -m pip install .`
 
 or for an editable version

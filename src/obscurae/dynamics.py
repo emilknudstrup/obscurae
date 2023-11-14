@@ -6,9 +6,13 @@
 import numpy as np
 import scipy.signal as ss
 
+__all__ = ['Dynamics','SpotOn']
+
+
 # =============================================================================
 # Orbital dynamics
 # =============================================================================
+
 
 class Dynamics(object):
 	'''Orbital dynamics.
@@ -23,7 +27,10 @@ class Dynamics(object):
 		'''Solves Kepler's equation.
 
 		Function that solves Kepler's equation:
-		.. :math:`M = E - \sin(E)`,
+		
+		.. math::
+		
+			M = E - \sin (E),
 		
 		where :math:`M` is the mean anomaly and :math:`E` the eccentric anomaly.
 

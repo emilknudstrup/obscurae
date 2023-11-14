@@ -11,6 +11,8 @@ import scipy.signal as ss
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
+__all__ = ['Disk','Star','Planet','Spot']
+
 # =============================================================================
 # Grid
 # =============================================================================
